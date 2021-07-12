@@ -4,16 +4,16 @@ import Forecast from './Forecast';
 
 export default function Weather(props) {
     const [forecastInfo,setForecastInfo] = useState({
-        main: '-',
-        description: '-',
+        main: 'main',
+        description: 'description',
         temp: 0
     })
 
     return (
         //แปลงข้อมูลทั้งหมดเป็น props ให้ Forecast.js
         <ImageBackground source={require('../bg.png')} style={styles.backdrop}>
-            <Text>Zip Code</Text>
-            <Text>{props.zipCode}</Text>
+            <Text style={styles.BText}>Zip Code</Text>
+            <Text style={styles.BText}>{props.zipCode}</Text>
             <Forecast {...forecastInfo}/> 
         </ImageBackground>
     );
@@ -21,8 +21,13 @@ export default function Weather(props) {
 
    const styles = StyleSheet.create({    //กำหนด backdrop style 
         backdrop: {
-            alignItems: 'center',
+            flexDirection: 'column',
+            justifyContent: 'center', //center แนวแกนตั้ง
+            alignItems: 'center', //center แนวแกนนอน
             width: '100%',
             height:'100%'
+        },
+        BText: {
+            fontSize: 40
         }
    })
