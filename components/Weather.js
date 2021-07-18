@@ -10,12 +10,12 @@ export default function Weather(props) {
             .then((response) => response.json())
             .then((json) => {
                 setForecastInfo({
-                    main: json.weather[0].main,
+                    //main: json.weather[0].main,
                     description: json.weather[0].description,
                     temp: json.main.temp,
                     pressure: json.main.pressure,
                     humidity: json.main.humidity,
-                    icon: json.weather[0].icon
+                    icon: json.weather[0].icon,
                     });
                 })
             .catch((error) => {

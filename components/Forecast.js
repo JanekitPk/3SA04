@@ -4,8 +4,9 @@ import { StyleSheet, Text, View, Image } from 'react-native'
 export default function Forecast(props) {
     return (
     <View style={styles.Space}>
-        <Text>{props.main}</Text>
-        <Text>{props.description}</Text>
+        <View style={styles.Bfont}>
+                <Text>Weather Info</Text>
+        </View>
         <View styles={styles.Row}> 
             <Text>Tempurature: {props.temp} °C</Text>
             <Text>Pressure: {props.pressure} Pa</Text>
@@ -15,8 +16,9 @@ export default function Forecast(props) {
                  source={{
                      uri: 'http://openweathermap.org/img/wn/'+props.icon+'@2x.png',
                  }}
-             />
-        </View>
+             />  
+            <Text>{props.description}</Text>    
+        </View> 
     </View>
 
     )
@@ -27,20 +29,16 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         flexDirection: 'row',
     },
+    Bfont:{
+        alignItems: 'center'
+    },
     Space:{
         flexDirection: 'column',
         justifyContent:'space-evenly',
-        height:'40%'
-    },
-    container: {
-        paddingTop: 50,
+        height:'50%'
     },
     tinyLogo: {
         width: 50,
         height: 50,
-    },
-    logo: {
-        width: 66,
-        height: 58,
     },
 })   
