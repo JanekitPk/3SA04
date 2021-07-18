@@ -1,3 +1,4 @@
+นายเจนกิจ  ประกิจถาวรกุล  6210110051
 commit1: เพิ่มข้อมูลในส่วนของ Pressure
 commit2: เพิ่มข้อมูลในส่วนของ Humidity จัดตำแหน่ง text และเพิ่ม icon สภาพอากาศโดย import Image จัดขนาดและ source ของ icon
 commit3: จัดตำแหน่ง text description อธิบาย icon
