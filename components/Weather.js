@@ -35,7 +35,7 @@ export default function Weather(props) {
 
     return (
         //แปลงข้อมูลทั้งหมดเป็น props ให้ Forecast.js
-        <ImageBackground source={require('../bg.png')} style={styles.backdrop}>
+        <ImageBackground source={require('../bg.gif')} style={styles.backdrop}>
             <View style={styles.BBlack}>
                 <Text style={styles.BText}>Zip Code</Text>
                 <Text style={styles.BText}>{props.zipCode}</Text>
