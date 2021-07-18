@@ -1,0 +1,5 @@
+commit1: เพิ่มข้อมูลในส่วนของ Pressure
+commit2: เพิ่มข้อมูลในส่วนของ Humidity จัดตำแหน่ง text และเพิ่ม icon สภาพอากาศโดย import Image จัดขนาดและ source ของ icon
+commit3: จัดตำแหน่ง text description อธิบาย icon
+commit4: เพิ่มข้อมูลจังหวัด - รหัสไปรษณีย์
+commit5: จัดตำแหน่ง layout เพิ่มข้อมูลส่วนของเวลา และ เพิ่มไฟล์ submission.txt
